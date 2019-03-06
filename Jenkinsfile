@@ -9,7 +9,7 @@ pipeline {
     }
     stage('NG build') {
       steps {
-        powershell(script: 'ng build', returnStatus: true, returnStdout: true)
+        sh 'ng build'
       }
     }
   }
