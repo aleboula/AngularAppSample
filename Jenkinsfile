@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Npm') {
       steps {
-        powershell(script: 'npm install -g @angular/cli', returnStatus: true, returnStdout: true)
+        powershell(script: 'npm -i -g @angular/cli', returnStatus: true, returnStdout: true)
         powershell(script: 'npm install', returnStatus: true, returnStdout: true)
       }
     }
